@@ -1,0 +1,143 @@
+body{
+    font-family:"Verdana", sans-serif;
+    font-size:small;
+    background:white;
+    color:black;
+    line-height:150%;
+    font-size:100%;
+}
+
+
+h3{
+    color:#008000;
+    font-size:120%;
+}
+
+h4{
+    font-weight:normal;
+    font-size:120%;
+    color:#008000;
+    font-weight:bold;   
+}
+
+h4 span{
+    font-style: italic;
+    font-weight:normal;
+    font-size: 70%;
+    color:black;
+}
+
+
+a{
+   color:#a60000;
+}
+
+p{   
+    margin-bottom:1em;
+    margin:0.5em 0;
+}
+
+hr{
+    display:none;
+}
+
+ul{
+    margin-bottom: 1em;
+}
+
+li{
+    list-style:none;
+    line-height: 180%;
+}
+
+fieldset{
+    padding:0.5em;
+    margin-bottom:1em;
+    background:#eee;
+    border:none;
+    /* padding-bottom:0; */
+}
+
+
+legend{
+      padding:0 0.5em;
+      color:white;
+      background:#008000;
+      font-size: 80%;      
+    }
+
+label{
+    font-weight:bold;
+    font-size: 100%;
+    line-height: 1.1em;
+}
+
+label span{
+    font-weight:normal;    
+    color:#333;
+    font-style: italic;      
+}
+
+/* remove textarea scrollbar in IE  */
+textarea{
+	overflow:auto;
+        width:100%;            
+}
+
+img{
+    border:none;
+}
+
+hr{
+    display:none;
+}
+
+pre{
+    font-family:"Verdana", sans-serif;
+}
+
+table{
+      margin: 0 0 1em 0;
+      width:100%;
+      border-collapse:collapse;
+      font-size: 100%;      
+    }
+
+table caption{
+    margin:0 0 0.5em 0;
+    text-align:left;
+    font-weight:bold;
+    font-size:120%;
+    }
+
+table td, table th{
+    padding:0 0.5em;
+    vertical-align:top;
+    text-align:left;
+    line-height: 2em;
+    color:#333;
+}
+
+table th{
+    color:white;
+    font-weight:normal;
+    background:#333;
+   
+}
+
+table th:first-child{     
+     -webkit-border-top-left-radius:5px;   
+     -moz-border-radius-topleft:5px;  
+}
+
+table th:last-child{
+     -webkit-border-top-right-radius:5px;    
+     -moz-border-radius-topright:5px;   
+}
+
+table tr{
+    border-bottom:1px dotted #bbb;
+}
+
+
+

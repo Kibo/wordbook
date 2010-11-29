@@ -1,0 +1,193 @@
+@import url("reset.css");
+@import url("typo.css");
+@import url("tools.css");
+@import url("nav.css");
+
+
+/*--Layout-----------------*/
+#page{
+    width:90%;
+    margin:1em auto;
+    position:relative;
+}
+
+#header{
+    line-height:1.1em;
+    margin-bottom:0.2em;
+}
+
+#logo{
+    float:left;
+    margin:0 0.5em;
+    position:relative;
+    z-index:100;
+}
+
+#bar{
+    position:relative;
+    background:#eee;
+    line-height:2.5em;   
+}
+
+h1{
+    font-size:190%;
+    color:#008000;
+   
+}
+
+h1 span{
+    font-weight:normal;
+    font-size:60%;
+    color:#333;
+    
+}
+
+h2{
+    font-weight:normal;
+    font-size:85%;
+    color:#333;
+    font-weight:bold;
+    margin-top:0.2em;
+}
+
+#main{
+    float:right;
+    width:80%;     
+}
+
+#local{
+    float:left;
+    width:20%;   
+}
+
+#footer{
+    border-top:1px dashed #666;
+}
+
+#footer p{
+    text-align:right;
+    font-size: 70%;
+    color:#666;
+}
+
+
+/*--Typo---------------------*/
+
+#main .space ol, #main .space ul {
+    padding-left:2em;
+    margin:1em 0;
+
+}
+
+#main .space .answer ol li{
+    list-style: decimal;
+}
+
+#main .space .answer ul li{
+    list-style:disc;
+}
+
+
+/*--Content-----------------*/
+
+.block{
+    background:#eee;
+    padding:1em;
+    margin-bottom:1em;
+}
+
+#local .space{
+    padding-left:0;
+}
+
+#main .space{  
+   padding:1em 0;
+}
+
+/*--TAG------*/
+.tags a{
+    text-decoration: none;
+}
+
+.tags a:hover{
+    text-decoration: underline;
+}
+
+#rehearsingMenuBar .button{
+    float:right;
+    margin-left:1px;
+}
+
+#main input[type="text"]:focus{
+    border:2px solid red;
+    padding:0.5em 1em;
+    font-weight:bold;
+}
+
+#main .searchBox{
+    border:2px solid red;
+    padding:0.5em 1em;
+    font-weight:bold;
+}
+
+.false{
+    color:white;
+    background:red;    
+}
+
+/*--fckeditor----*/
+.editor{
+    margin-bottom:1em;
+}
+
+/* --Tablesorter ---------- */
+table.tablesorter thead tr .header {
+	background-image: url(../images/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(../images/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(../images/desc.gif);
+}
+
+/* --DIALOGS ---------------*/
+
+.monkey{ 
+    background:url(../images/monkey7.png) no-repeat left bottom;
+    margin-bottom: 1em; 
+}
+
+.monkey fieldset{
+    float:left;   
+    margin-left:40px;
+    padding:0.2em 1em;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px; /* future proofing */
+    -khtml-border-radius: 30px; /* for old Konqueror browsers */
+
+}
+
+.student{
+   
+    margin-bottom: 1em;
+    background:url(../images/elephant2.png) no-repeat right bottom;
+}
+
+.student fieldset{   
+    float:right;
+    margin-right:40px;
+    padding:0.2em 1em;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px; /* future proofing */
+    -khtml-border-radius: 30px; /* for old Konqueror browsers */
+}
+
+
+
+

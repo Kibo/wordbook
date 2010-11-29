@@ -1,0 +1,91 @@
+#nav{     
+    margin:0;    
+    float:right;
+    font-size:100%;
+    position:absolute;
+    top:-2em;
+    right:1em;   
+}
+
+#nav li{
+    float:left;    
+}
+
+
+#nav li a{
+    display:block;   
+    color:white;  
+    background:#a60000 url(../images/buttonBg.png) repeat-x 0 50%;
+    line-height:2em;
+    text-decoration:none;
+    padding:0 1em;
+    float:left;
+    margin-left:1px;    
+    /* border-radius: 5px */;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;   
+}
+
+#nav li a:hover{
+    text-decoration:underline;
+}
+
+#phrasePage #phraseLink,
+#vocabularyPage #vocabularyLink,
+#iVerbPage #iVerbLink,
+#testPage #testLink,
+#gamePage #gameLink
+{         
+    background:#eee;
+    color:black;
+}
+
+#nav li a.inActive{
+    background:#aaa;    
+}
+#nav li a.inActive:hover{
+    text-decoration: none;
+    cursor:default;
+}
+
+/*--local-Navigation-----------------*/
+ul#localNav li a{
+    display:block;
+    color:white;
+    background:#a60000 url(../images/flanel.png) repeat 0 50%;
+    line-height:2em;
+    text-decoration:none;
+    padding:0 1em;
+    margin-bottom:1px;
+}
+
+ul#localNav li a:hover{
+    text-decoration:underline;
+}
+
+ul#localNav li:first-child a{
+ -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+}
+
+ul#localNav li:last-child a{
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+}
+
+
+/*--breadcumb----------------------*/
+#breadcrumb{
+    margin-left:20%;
+    color:black;
+    font-weight:normal;
+    font-size:80%;
+}
+
+

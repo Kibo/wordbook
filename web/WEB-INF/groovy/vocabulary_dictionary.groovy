@@ -1,0 +1,1 @@
+forward '/vocabulary_dictionary.gtpl'
