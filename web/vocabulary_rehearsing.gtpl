@@ -67,6 +67,10 @@
                         <input type="hidden" name="preference" value="${request.preference.id}" />
                         <input type="submit" class="button" value="Daší" />
 
+                        <%if(request.vocabulary.owner.equals(user)){%>
+                            <a href="/slovicka/edit/${request.vocabulary.id}">upravit</a> |
+                        <%}%>
+
                         <a href="/slovicka/remove/${request.vocabulary.id}">odstranit</a>
 
                     </div>

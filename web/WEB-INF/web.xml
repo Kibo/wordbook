@@ -115,6 +115,12 @@
     <welcome-file-list>
         <welcome-file>index.gtpl</welcome-file>
     </welcome-file-list>
+
+    <error-page>
+        <error-code>500</error-code>
+        <location>/failure.gtpl</location>
+    </error-page>
+
 </web-app>
 
 

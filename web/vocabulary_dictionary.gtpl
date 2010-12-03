@@ -9,8 +9,7 @@
         <meta name="robots" content="all, follow"/>      
         <link rel="stylesheet" type="text/css" href="/css/main.css"/>
 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-        <script type="text/javascript" src="/js/main.js"></script>
+        
 
     </head>
     <body id="vocabularyPage">
@@ -45,21 +44,25 @@
 
                      <% if( request.vocabulary != null) { %>
                         <div class="line"></div>
-                            <h4>${request.vocabulary.source} <span>(${request.vocabulary.lang})</span></h4>
 
-                            <form action="/slovicka/save" method="post">
-                                <ol>
-                                    <% request.vocabulary.entries.each(){ term -> %>
-                                        <li><label><input type="checkbox" name="entries" value="${term}" /> ${term}</label></li>
-                                    <%}%>
-                                </ol>
+                        <h4>${request.vocabulary.source} <span>(${request.vocabulary.lang})</span></h4>
+                        <form action="/slovicka/save" method="post">
+                            <ol>
+                                <% request.vocabulary.entries.eachWithIndex(){ term, idx -> %>
+                                    <li>
+                                            <input type="checkbox" name="entries" value="text${idx}" />
+                                            <input type="text" name="text${idx}" value="${term}" maxlength="20" />
+                                    </li>
+                                <%}%>
+                            </ol>
 
-                                <div class="right">
-                                    <input type="hidden" name="source" value="${request.vocabulary.source}" />
-                                    <input type="hidden" name="lang" value="${request.vocabulary.lang}" />
-                                    <input class="button" type="submit" value="Přidej do knihovny" />
-                                </div>
-                            </form>
+                            <div class="right">
+                                <input type="hidden" name="id" value="${request.vocabulary.id}" />
+                                <input type="hidden" name="source" value="${request.vocabulary.source}" />
+                                <input type="hidden" name="lang" value="${request.vocabulary.lang}" />
+                                <input class="button" type="submit" value="Uložit do knihovny" />
+                            </div>
+                        </form>
 
                             <% if( !request.vocabulary.getRelated().isEmpty() ){ %>
                                 <div class="line"></div>
@@ -72,7 +75,7 @@
                                     </ol>
                                     <div class="right">
                                         <input type="hidden" name="tags" value="${cz.kibo.wordbook.constant.Constant.PHRASE_TAG_SLOVNI_SPOJENI}" />
-                                        <input type="submit" class="button" value="Přidej do knihovny" />
+                                        <input type="submit" class="button" value="Uložit do knihovny" />
                                     </div>
                                 </form>                            
                             <%}%>
@@ -94,6 +97,9 @@
         <% include '/WEB-INF/includes/footer.gtpl' %>
 
       </div> <!-- id="page" -->
+
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+      <script type="text/javascript" src="/js/main.js"></script>
 
     </body>
 </html>

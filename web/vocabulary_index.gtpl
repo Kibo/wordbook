@@ -37,7 +37,26 @@
                     <div class="cleaner"></div>
                     <div class="help hidden">
                     <div class="line"></div>
-                    <p>Na nápovědě se pracuje. Děkujeme za pochopení.</p>
+                   <h4 >Přidání slovíčka do knihovny</h4>
+                   <p>Po kliknutí na tlačítko <em>Nové slovíčko</em> vložte do vyhledávacího políčka požadované slovo.
+                   Po kliknutí na tlačítko <em>Vyhledat ve slovníku</em> se zobrazí nalezené významy slova.
+                   Zaškrtnutím jen těch významů slova, které jsou pro Vás důležité a kliknutím na
+                   tlačítko <em>Přidej do knihovny</em>, se slovíčko uloží do Vaší knihovny slovíček.
+                   </p>
+
+                   <img src="/images/slovicko1.png" width="400" height="127" alt="anglická slovíčka"  />
+
+                <div class="line"></div>
+                <h4 >Procvičování</h4>
+                <p>Nástroj slovíčka sestavuje sadu slovíček k procvičování z Vaší <strong>knihovny slovíček</strong>.
+                Před procvičováním je tedy nutné nejprve do knihovny vložit slovíčka.</p>
+                <img src="/images/slovicko2.png" width="333" height="231" alt="anglická slovíčka"  />
+
+
+                    <div class="line"></div>
+                    <h4>Knihovna slovíček</h4>
+                    <p>Anglická slovíčka, která dokonale ovládáte můžete z Vaší knihovny odstranit.</p>
+                    <img src="/images/slovicko3.png" width="400" height="247" alt="anglická slovíčka"  />
                     
                     </div>
 

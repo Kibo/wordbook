@@ -42,7 +42,11 @@
                                         <% vocabulary.entries.each(){ en ->  println en } %>
                                     </td>
                                     <td>${vocabulary.lang}</td>
-                                    <td>                                      
+                                    <td>
+                                         <%if(vocabulary.owner.equals(user)){%>
+                                            <a href="/slovicka/edit/${vocabulary.id}">upravit</a> |
+                                         <%}%>
+
                                         <a href="/slovicka/remove/${vocabulary.id}" onclick="return confirm('Smazat slovíčko?')" >odstranit</a>
                                     </td>
                                 </tr>

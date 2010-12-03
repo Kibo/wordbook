@@ -51,6 +51,8 @@ get "/slovicka/slovnik", forward: "/WEB-INF/groovy/vocabulary_dictionary.groovy"
 post "/slovicka/slovnik/hledej", forward: "/WEB-INF/groovy/vocabulary_dictionary_search.groovy"
 post "/slovicka/save", forward: "/WEB-INF/groovy/vocabulary_save.groovy"
 
+get "/slovicka/edit/@id", forward: "/WEB-INF/groovy/vocabulary_edit.groovy?id=@id"
+
 get "/slovicka/knihovna", forward: "/WEB-INF/groovy/vocabulary_library.groovy"
 get "/slovicka/remove/@id", forward: "/WEB-INF/groovy/vocabulary_remove.groovy?id=@id"
 

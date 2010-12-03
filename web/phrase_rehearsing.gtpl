@@ -7,9 +7,7 @@
         <meta name="description" content="Drilujte s námi anglické fráze."/>
         <meta name="keywords" content="anglické fráze"/>
 
-        <link rel="stylesheet" type="text/css" href="/css/main.css"/>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-        <script type="text/javascript" src="/js/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/main.css"/>        
     </head>
     <body id="phrasePage">
       <div id="page">
@@ -103,7 +101,9 @@
         <% include '/WEB-INF/includes/footer.gtpl' %>
 
       </div> <!-- id="page" -->
-           
+
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+      <script type="text/javascript" src="/js/main.js"></script>
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
     </body>
 </html>
