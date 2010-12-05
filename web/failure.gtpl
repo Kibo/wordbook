@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Chyba v aplikac | drilujeme.cz</title>
+        <title>Chyba v aplikaci | www.drilujeme.cz</title>
         <meta name="description" content="Drilujte s námi anglická slovíčka, anglické fráze a anglická nepravidelná slovesa."/>
         <meta name="keywords" content="dril, anglická nepravidelná slovesa, anglické fráze, drilování, anglická slovíčka"/>
         <meta name="robots" content="all, follow"/>
@@ -23,10 +23,13 @@
 
                 <img class="img" src="/images/monkey8.jpg" alt="chyba v aplikaci" width="400" height="232" />
 
-                <div class="line"></div>
+                <br /><br />
+                <% include '/WEB-INF/includes/footer.gtpl' %>
 
             </div>
         </div>
+
+    <% include '/WEB-INF/includes/gaq.gtpl' %>
     </body>
 </html>
 

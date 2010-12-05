@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Anglické fráze | drilujeme.cz</title>
+        <title>Anglické fráze | www.drilujeme.cz</title>
         <meta name="description" content="Drilujte s námi anglické fráze."/>
         <meta name="keywords" content="anglické fráze"/>
 
@@ -151,12 +151,16 @@
               </div> <!-- id="main" -->
 
         </div>  <!-- id="content" -->
+       
 
         <% include '/WEB-INF/includes/footer.gtpl' %>
 
       </div> <!-- id="page" -->
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
         <script type="text/javascript" src="/js/main.js"></script>
+
+        <% include '/WEB-INF/includes/gaq.gtpl' %>
     </body>
 </html>
 

@@ -3,14 +3,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Anglická slovíčka - slovník | drilujeme.cz</title>
+        <title>Anglická slovíčka - slovník | www.drilujeme.cz</title>
         <meta name="description" content="Drilujte s námi anglická slovíčka."/>
         <meta name="keywords" content="anglická slovíčka"/>        
         <meta name="robots" content="all, follow"/>      
-        <link rel="stylesheet" type="text/css" href="/css/main.css"/>
-
-        
-
+        <link rel="stylesheet" type="text/css" href="/css/main.css"/>       
     </head>
     <body id="vocabularyPage">
       <div id="page">
@@ -49,11 +46,18 @@
                         <form action="/slovicka/save" method="post">
                             <ol>
                                 <% request.vocabulary.entries.eachWithIndex(){ term, idx -> %>
-                                    <li>
-                                            <input type="checkbox" name="entries" value="text${idx}" />
-                                            <input type="text" name="text${idx}" value="${term}" maxlength="20" />
+                                    <li> <label><input type="checkbox" name="entries" value="text${idx}" /> ${term}</label>
+                                            <input type="hidden" name="text${idx}" value="${term}" />
                                     </li>
                                 <%}%>
+
+                                <% if( request.vocabulary.entries.isEmpty()) { %>
+                                    <li>
+                                        <input type="checkbox" name="entries" value="text0" checked="checked" />
+                                        <input type="text" name="text0" value="" maxlength="20" />
+                                    </li>
+                                <%}%>
+                                
                             </ol>
 
                             <div class="right">
@@ -93,14 +97,17 @@
               </div> <!-- id="main" -->
 
         </div>  <!-- id="content" -->
+       
 
         <% include '/WEB-INF/includes/footer.gtpl' %>
 
       </div> <!-- id="page" -->
 
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
       <script type="text/javascript" src="/js/main.js"></script>
 
+      
+      <% include '/WEB-INF/includes/gaq.gtpl' %>
     </body>
 </html>
 

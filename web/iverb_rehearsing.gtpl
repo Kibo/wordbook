@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Anglická nepravidelná slovesa - Procvičování | drilujeme.cz</title>
+        <title>Anglická nepravidelná slovesa - Procvičování | www.drilujeme.cz</title>
         <meta name="description" content="Drilujte s námi anglická nepravidelná slovesa."/>
         <meta name="keywords" content="anglická nepravidelná slovesa"/>
         <link rel="stylesheet" type="text/css" href="/css/main.css"/>        
@@ -109,9 +109,12 @@
 
       </div> <!-- id="page" -->
 
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
       <script type="text/javascript" src="/js/main.js"></script>
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+
+
+    
     </body>
 </html>
 

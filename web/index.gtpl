@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Home | drilujeme.cz</title>
+        <title>Nepravidelná slovesa, anglické fráze, drilování slovíček | www.drilujeme.cz</title>
         <meta name="description" content="Drilujte s námi anglická slovíčka, anglické fráze a anglická nepravidelná slovesa."/>
         <meta name="keywords" content="dril, anglická nepravidelná slovesa, anglické fráze, drilování, anglická slovíčka"/>
         <meta name="robots" content="all, follow"/>
@@ -73,6 +73,8 @@
 
       </div> <!-- id="page" -->
 
+
+    <% include '/WEB-INF/includes/gaq.gtpl' %>
     </body>
 </html>
 

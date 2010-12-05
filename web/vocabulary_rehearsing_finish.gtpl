@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Slovíčka - procvičování | drilujeme.cz</title>
+        <title>Slovíčka - procvičování | www.drilujeme.cz</title>
         <meta name="robots" content="all, follow"/>
         <meta name="description" content="Drilujeme slovíčka."/>
         <meta name="keywords" content="slovíčka, slovník, drilování, procvičování"/>
@@ -49,6 +49,7 @@
 
       </div> <!-- id="page" -->
 
+      <% include '/WEB-INF/includes/gaq.gtpl' %>
     </body>
 </html>
 
