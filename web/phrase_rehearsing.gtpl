@@ -24,38 +24,31 @@
               <div id="main">
                 <div class="space">
 
-                    <div class="monkey">
-                        <fieldset>
-                            <div>
-                                ${request.phrase.front.value}
-                            </div>
-                         </fieldset>
-                        <div class="cleaner"></div>
-                   </div>
 
 
-                    <div class="student hidden">
-                        <fieldset>
-                            <div>
-                                ${request.phrase.back.value}
-                            </div>
-                            
-                            <%if(!request.phrase.gramar.value.isEmpty()){%>
-                            <div class="line"></div>
-                                <div>
-                                    ${request.phrase.gramar.value}
-                                </div>
-                            <%}%>
-                        </fieldset>
+                     <img src="/images/drilujeme1.jpg" class="toLeft shadow" alt="Teacher" width="60" />
+                      <div class="chat-bubble-left">${request.phrase.front.value}</div>
+                      <div class="cleaner"></div>
+
+
+                      <div class="student hidden">
+                          <img src="/images/drilujeme2.jpg" class="toRight shadow" alt="Student" width="60" />
+                          <div class="chat-bubble-right">
+                              ${request.phrase.back.value}
+
+                              <%if(!request.phrase.gramar.value.isEmpty()){%>
+                                <div class="line"></div>
+                                ${request.phrase.gramar.value}
+                              <%}%>
+                          </div>
                          <div class="cleaner"></div>
-                    </div>
-
-
+                     </div>
+                   
                         <div class="line"></div>
 
                         <div id="rehearsingMenuBar" class="clearfix">
 
-                            <input type="button" class="button getFocus" value="Kontrola" onclick="showResult(); speech('${request.phrase.textToSpeech()}');" />
+                            <button type="button" class="button sound getFocus" onclick="showResult(); speech('${request.phrase.textToSpeech()}');">Kontrola <span</span></button>
 
                             <form action="/fraze/preference/save" method="post">
                                 <input type="hidden" name="phrase" value="${request.phrase.id}" />
@@ -103,7 +96,7 @@
 
       </div> <!-- id="page" -->
 
-           <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
       <script type="text/javascript" src="/js/main.js"></script>
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
 

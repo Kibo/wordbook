@@ -6,11 +6,18 @@ def preference =  Preference.get(parent, params.preference)
 
 def entries = params.entries.split(",") as List
 
+
+//user set your answer as correct
+def forceCorrect = params.isCorrect == null ? false : true;
+
 def success = true
-for( int i = 0; i< entries.size(); i++ ){     
-    if (!entries.contains( params."entriesStudent${i}".trim()  )){
-        success = false
-        break
+
+if ( !forceCorrect ){
+    for( int i = 0; i< entries.size(); i++ ){
+        if (!entries.contains( params."entriesStudent${i}".trim()  )){
+            success = false
+            break
+        }
     }
 }
 
@@ -19,7 +26,7 @@ if(success){
     preference.next = new Date() + (preference.period as int)
     preference.period = preference.period * 2
 }else{
-    log.info "wrongly"  
+    log.info "wrongly"
     preference.period = 1
 }
 

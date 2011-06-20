@@ -24,15 +24,19 @@
 
               <div id="main">
                 <div class="space">
-                    <img src="/images/monkey3.jpg" class="toRight img" width="200" height="150"  alt="anglická slovíčka" title="anglická slovíčka" />
-                    <h4>Popis nástroje Anglická slovíčka</h4>
+
+                    <div class="toRight">
+                         <object width="300" height="250"><param name="movie" value="http://www.youtube.com/v/g0o_SpGPSa8?fs=1&amp;hl=cs_CZ&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/g0o_SpGPSa8?fs=1&amp;hl=cs_CZ&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="300" height="250"></embed></object>
+                    </div>
+                 
+                    <h4>Jak na to</h4>
                     <p>Nástroj Anglická slovíčka slouží ke <strong>drilování anglických slovíček</strong>. Pomocí zabudovaného <a href="/slovicka/slovnik">anglicko-českého slovníku</a> objevíte množství významů anglických slov.
                        Jediným kliknutím přidáte anglické slovíčko do <strong>knihovny slovíček</strong>.
                        Nechávejte se <strong>pravidelně přezkoušet</strong> z anglických slovíček uložených ve Vaší <strong>knihovně slovíček</strong>.
                        
                     </p>
 
-                    <p>Více se o používání nástroje <strong>Anglická slovíčka</strong> dočtete v <a href="#" onClick="showHelp();">nápovědě</a>.</p>
+                    <p>Více se o používání nástroje <strong>Anglická slovíčka</strong> dočtete v <a href="#" onclick="showHelp();">nápovědě</a>.</p>
 
                     <div class="cleaner"></div>
                     <div class="help hidden">
@@ -50,7 +54,9 @@
                 <h4 >Procvičování</h4>
                 <p>Nástroj slovíčka sestavuje sadu slovíček k procvičování z Vaší <strong>knihovny slovíček</strong>.
                 Před procvičováním je tedy nutné nejprve do knihovny vložit slovíčka.</p>
-                <img src="/images/slovicko2.png" width="333" height="231" alt="anglická slovíčka"  />
+                <img src="/images/slovicko2.png" width="333" height="146" alt="anglická slovíčka"  />
+
+                 <p>Tlačítkem <em>Je správně!</em> můžete označit jako správnou odpověď i odpověď, kterou systém vyhodnotil jako chybnou, například v případě, že se jedná o synonymum.</p>
 
 
                     <div class="line"></div>
@@ -60,6 +66,9 @@
                     
                     </div>
 
+                    <div class="line cleaner"></div>
+                    <h3>Sdělte nám Váš názor</h3>
+                    <div id="fb-root"></div><script src="http://connect.facebook.net/cs_CZ/all.js#appId=171871726186416&amp;xfbml=1"></script><fb:comments xid="171871726186416" numposts="10" width="810" publish_feed="true"></fb:comments>
 
                </div> <!-- class="space" -->
                <hr />
@@ -68,7 +77,11 @@
              <div id="local">
                 <div class="space">
                     <% include '/WEB-INF/includes/vocabulary_local_navigation.gtpl' %>
-                </div> <!-- id="space" -->
+
+                    <% include '/WEB-INF/includes/advertisement.gtpl' %>
+                                                   
+                  </div> <!-- id="space" -->
+
                <hr />
               </div> <!-- id="main" -->
 

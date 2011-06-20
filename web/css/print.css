@@ -1,0 +1,32 @@
+body {margin:0; padding:0; line-height: 1.5em; word-spacing:1px; letter-spacing:0.2px; font: 13px Arial, Helvetica,"Lucida Grande", serif; color: #000;}
+
+#header,#bar,#footer, #local, #nav, .noPrint, hr{
+    display:none;
+}
+
+#main{
+    width:100%;
+}
+
+table{
+   width:100%;
+   border-collapse:collapse;
+   border:1px solid #333 ;
+}
+
+th{
+    background:orange;
+    font-weight: bold;
+}
+
+th, td{
+    text-align:left;
+    border:1px solid #999;
+    padding:2px;
+}
+
+.even{
+    background: #eee;
+}
+
+

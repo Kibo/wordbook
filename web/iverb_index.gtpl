@@ -23,16 +23,19 @@
 
               <div id="main">
                 <div class="space">
-                      <img src="/images/monkey3.jpg" class="toRight img" width="200" height="150"  alt="anglická nepravidelná slovesa" title="anglická nepravidelná slovesa" />
-                    <h4>Popis nástroje Anglická nepravidelná slovesa</h4>
+                   
+                    <div class="toRight">
+                            <object width="300" height="193"><param name="movie" value="http://www.youtube.com/v/K8QDY87iZx4?fs=1&amp;hl=cs_CZ&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/K8QDY87iZx4?fs=1&amp;hl=cs_CZ&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="300" height="193"></embed></object>
+                    </div>
+
+                    <h4>Jak na to</h4>
                     <p>Nástroj Anglická nepravidelná slovesa slouží ke <strong>drilování anglických nepravidelných sloves</strong>.
                         Přidejte si do své knihovny nepravidelných sloves anglická slovesa, u kterých často chybujete
                         a nechávejte se z těchto sloves <strong>pravidelně přezkoušet</strong>.
                     </p>
 
-                    <p>Více se o používání nástroje <strong>Anglická nepravidelná slovesa</strong> dočtete v <a href="#" onClick="showHelp();">nápovědě</a>.</p>
-
-                    <div class="cleaner"></div>
+                    <p>Více se o používání nástroje <strong>Anglická nepravidelná slovesa</strong> dozvíte v přiloženém videu (se zvukem) nebo v <a href="#" onclick="showHelp();">nápovědě</a>.</p>
+                                       
                     <div class="help hidden">
                         <div class="line"></div>
                         <h4 id="nove_sloveso">Vytvoření nového slovesa</h4>
@@ -100,6 +103,10 @@
                         Takto zobrazené tagy <strong>můžete přidávat</strong> do <em>Vaší knihovny</em>.</p>
 
                     </div>
+
+                     <div class="line cleaner"></div>
+                    <h3>Sdělte nám Váš názor</h3>
+                    <div id="fb-root"></div><script src="http://connect.facebook.net/cs_CZ/all.js#appId=171871726186416&amp;xfbml=1"></script><fb:comments xid="171871726186416" numposts="10" width="810" publish_feed="true"></fb:comments>
                    
                         </div> <!-- id="space" -->
                <hr />
@@ -114,8 +121,16 @@
                     <% include '/WEB-INF/includes/iverb_tags.gtpl' %>
                 </div> <!-- class="block" -->
 
+                <div class="block corner">
+                    <h3>Doporučujeme</h3>
+                    <ul>
+                        <li><a href="http://anglicka-nepravidelna-slovesa.cz" title="anglická nepravidelná slovesa">Přehled nepravidelných sloves</a></li>
+                    </ul>
 
+                </div> <!-- class="block" -->
 
+                <% include '/WEB-INF/includes/advertisement.gtpl' %>
+             
                 </div> <!-- id="space" -->
                <hr />
               </div> <!-- id="main" -->

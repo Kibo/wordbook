@@ -24,8 +24,12 @@
 
               <div id="main">
                 <div class="space">
-                    <img src="/images/monkey3.jpg" class="toRight img" width="200" height="150"  alt="anglické fráze" title="anglické fráze" />
-                    <h4>Popis nástroje Anglické fráze</h4>
+
+                    <div class="toRight">
+                        <object width="300" height="250"><param name="movie" value="http://www.youtube.com/v/dmdLyThTKbE?fs=1&amp;hl=cs_CZ&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/dmdLyThTKbE?fs=1&amp;hl=cs_CZ&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="300" height="250"></embed></object>
+                    </div>
+
+                    <h4>Jak na to</h4>
                     <p>Nástroj Anglické fráze slouží ke <strong>drilování anglických frází</strong>.
 
 
@@ -34,7 +38,7 @@
                      
                     </p>
 
-                    <p>Více se o používání nástroje <strong>Anglické fráze</strong> dočtete v <a href="#" onClick="showHelp();">nápovědě</a>.</p>
+                    <p>Více se o používání nástroje <strong>Anglické fráze</strong> dočtete v <a href="#" onclick="showHelp();">nápovědě</a>.</p>
 
                     <div class="cleaner"></div>
 
@@ -126,10 +130,11 @@
                         Správně označenou frází pomůžeme ostatním studentům při vyhledávání frází (například jen frází, které se týkají předložek).</p>
 
                         <p>Fráze, které patří do dané skupiny, zobrazíte kliknutím na název tagu. Takto zobrazené fráze můžete přidávat do V<em>aší knihovny</em>.</p>
-
-
-
                     </div>
+
+                    <div class="line cleaner"></div>
+                    <h3>Sdělte nám Váš názor</h3>
+                    <div id="fb-root"></div><script src="http://connect.facebook.net/cs_CZ/all.js#appId=171871726186416&amp;xfbml=1"></script><fb:comments xid="171871726186416" numposts="10" width="810" publish_feed="true"></fb:comments>
                     
                 </div> <!-- id="space" -->
                <hr />
@@ -144,8 +149,8 @@
                     <% include '/WEB-INF/includes/phrase_tags.gtpl' %>
                 </div> <!-- class="block" -->
 
-
-
+               <% include '/WEB-INF/includes/advertisement.gtpl' %>
+              
                 </div> <!-- id="space" -->
                <hr />
               </div> <!-- id="main" -->

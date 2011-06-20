@@ -25,13 +25,10 @@
               <div id="main">
                 <div class="space">
 
-              
                    <h4>Nemáte slovíčka k procvičení.</h4>
                    <img src="/images/monkey4.jpg" class="img" width="300" height="200"   alt="anglická slovíčka" title="anglická slovíčka" />
              
-                  
-                
-
+                                  
                </div> <!-- class="space" -->
                <hr />
               </div> <!-- id="main" -->
@@ -39,6 +36,9 @@
              <div id="local">
                 <div class="space">
                     <% include '/WEB-INF/includes/vocabulary_local_navigation.gtpl' %>
+
+                   <% include '/WEB-INF/includes/advertisement.gtpl' %>
+
                 </div> <!-- id="space" -->
                <hr />
               </div> <!-- id="main" -->

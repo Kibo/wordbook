@@ -38,6 +38,9 @@
                     <div class="block corner">
                         <% include '/WEB-INF/includes/iverb_tags.gtpl' %>
                     </div> <!-- class="block" -->
+
+                    <% include '/WEB-INF/includes/advertisement.gtpl' %>
+
                 </div> <!-- id="space" -->
                <hr />
              </div> <!-- id="main" -->

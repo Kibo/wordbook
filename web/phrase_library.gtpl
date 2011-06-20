@@ -5,8 +5,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Anglické fráze - ${ (request.tag) ? cz.kibo.wordbook.constant.Constant.PHRASE_TAGS.get(params.tag) : 'Moje knihovna' } | www.drilujeme.cz</title>
         <meta name="description" content="Drilujte s námi anglické fráze."/>
-        <meta name="keywords" content="anglické fráze"/>
-        <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+        <meta name="keywords" content="anglické fráze"/>    
+        <link rel="stylesheet" type="text/css" href="/css/main.css" media="screen,handheld,projection,tv"/>
+        <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"/>
     </head>
     <body id="phrasePage">
       <div id="page">
@@ -28,8 +29,8 @@
                             <tr>
                                 <th>České znění fráze</th>
                                 <th>Anglická fráze</th>
-                                <th>Hodnocení</th>
-                                <th>Akce</th>
+                                <th class="noPrint">Hodnocení</th>
+                                <th class="noPrint">Akce</th>
                             </tr>
                         </thead>
                         
@@ -38,8 +39,8 @@
                                 <tr>
                                     <td>${phrase.front.value}</td>
                                     <td>${phrase.back.value}</td>
-                                    <td>${phrase.rating()}</td>
-                                    <td>
+                                    <td class="noPrint">${phrase.rating()}</td>
+                                    <td class="noPrint">
                                         <%if(request.tag){%>
                                             <a href="/fraze/knihovna/add/${phrase.id}" >přidej do knihovny</a>
                                         <%}else{%>
@@ -59,6 +60,9 @@
                                                                         
                     </table>
 
+                <div class="right">
+                    <input type="button" class="button noPrint"  value="Tisk" onclick="window.print();"/>
+               </div>
 
                 </div> <!-- id="space" -->
                <hr />

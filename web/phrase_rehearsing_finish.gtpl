@@ -37,8 +37,11 @@
                     <% include '/WEB-INF/includes/phrase_local_navigation.gtpl' %>
 
                     <div class="block corner">
-                        <% include '/WEB-INF/includes/phrase_tags.gtpl' %>
+                        <% include '/WEB-INF/includes/phrase_tags.gtpl' %>                       
                     </div> <!-- class="block" -->
+
+                 <% include '/WEB-INF/includes/advertisement.gtpl' %>
+
                 </div> <!-- id="space" -->
                <hr />
              </div> <!-- id="main" -->

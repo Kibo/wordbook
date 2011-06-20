@@ -51,13 +51,12 @@
                                     </li>
                                 <%}%>
 
-                                <% if( request.vocabulary.entries.isEmpty()) { %>
-                                    <li>
-                                        <input type="checkbox" name="entries" value="text0" checked="checked" />
-                                        <input type="text" name="text0" value="" maxlength="20" />
-                                    </li>
-                                <%}%>
-                                
+
+                                 <li>
+                                    <input type="checkbox" name="entries" value="text${request.vocabulary.entries.size()}"    ${ request.vocabulary.entries.isEmpty() ? 'checked="checked"' : ''}  />
+                                    <input type="text" name="text${request.vocabulary.entries.size()}" value="" maxlength="20" />
+                                 </li>
+                              
                             </ol>
 
                             <div class="right">

@@ -7,12 +7,33 @@
         <meta name="description" content="Drilujte s námi anglická slovíčka, anglické fráze a anglická nepravidelná slovesa."/>
         <meta name="keywords" content="dril, anglická nepravidelná slovesa, anglické fráze, drilování, anglická slovíčka"/>
         <meta name="robots" content="all, follow"/>
-        <meta name="google-site-verification" content="eJfaH0t3DL3_lO1GabBvaub3hO5ovR2mPGyrI4ABSwQ" />   
+        <meta name="google-site-verification" content="eJfaH0t3DL3_lO1GabBvaub3hO5ovR2mPGyrI4ABSwQ" />        
+        <link href='http://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css' />
         <link rel="stylesheet" type="text/css" href="/css/main.css"/>
         <style type="text/css">
             #main{
                 width:100%;
             }
+
+
+            dl{
+                margin-bottom: 1em;
+            }
+
+            dt{
+                font-size: 300%;
+                padding: 0.5em 0.5em;
+                background:#eee;
+                margin-bottom:0.3em;
+                color:green;               
+            }
+
+            dd.text{              
+                line-height: 79px;
+                margin-bottom: 1px;
+                font-size: 150%;
+
+            }      
         </style>
     </head>
     <body>
@@ -29,40 +50,49 @@
 
               <div id="main">
                 <div class="space">
-                    <img src="/images/monkey1.jpg" class="toLeft img" width="150" height="150"  alt="www.drilujeme.cz" title="anglická slovíčka, anglické fráze, nepravidelná slovesa" />
-                    <h4>Příčinou je zapomínání</h4>
-                    
 
-                    <p>Stalo se Vám již, že jste si nedokázali vzpomenout na <strong>anglické slovíčko</strong>, které jste dříve hbitě ovládali? Nevybavila se Vám <strong>anglická fráze</strong>, kterou jste dříve uměli odříkat i pozpátku? Stále se Vám pletou <strong>nepravidelná slovesa</strong>? </p>
-                  
-                    <p>K přechodu vjemu z krátkodobé do dlouhodobé paměti je potřeba <strong>opakování</strong>.
-                        Proces zapamatování si faktů <strong>závisí na počtu a intervalech jejich opakování</strong>.
-                        Opakování je přesný opak <strong>zapomínání</strong>. Tzn., nejvíce si člověk zapamatuje fakta, která <strong>pravidelně opakuje</strong>.</p>
+                    <dl>
+                        <dt class="corner">Drilujte s námi angličtinu</dt>
+                        <dd class="picture"> <img src="/images/monkey13.jpg" class="toLeft img" width="400" alt="www.drilujeme.cz" title="anglická slovíčka, anglické fráze, nepravidelná slovesa" /></dd>
+                        <dd class="text color1 corner">Anglická <strong><a href="/slovicka.html">slovíčka</a></strong></dd>
+                        <dd class="text color2 corner">Anglické <strong><a href="/fraze.html">fráze</a></strong></dd>
+                        <dd class="text color3 corner">Anglická <strong><a href="/nepravidelna_slovesa.html">nepravidelná slovesa</a></strong></dd>
+                    </dl>
 
-                    <p><strong>Pravidelným opakováním</strong> udržíte v paměti množství <strong>anglických slovíček</strong>, neustále se opakující <strong>anglické fráze</strong> i proklínaná <strong>anglická nepravidelná slovesa</strong>.</p>
-
-                   <div class="line clearfix"></div>
-                    <h4>Co k tomu potřebujete?</h4>
-                    <p>Zaregistrujte se u společnosti <a href="https://www.google.com/accounts/ServiceLogin">Google</a>.
-                     S množstvím kvalitních služeb získáte i nástroj <strong>www.drilujeme.cz</strong>, který Vám umožní <strong>drilovat naplno</strong>.
-                   </p>
+                    <div class="clearfix"></div>
                  
-                    <div class="line clearfix"></div>
-                      <img src="/images/monkey2.jpg" class="toLeft img" width="150" height="150"  alt="www.drijume.cz" title="anglická slovíčka, anglické fráze, nepravidelná slovesa" />
-                    <h4>Web Drilujeme je zdarma</h4>
-                 
-                   <p>Drilujeme <strong>je zdarma</strong> a nabízí několik nástrojů pro <strong>automatické drilování</strong>.</p>
+                     <div style="padding:1em; background:#eee; margin-bottom: 1em;" class="corner">
+                        <h4>Co k tomu potřebujete?</h4>
 
-                    <ul>
-                        <li><strong>Slovíčka</strong> - <a href="/slovicka.html" title="anglická slovíčka"  >drilování anglických slovíček</a>.</li>
-                        <li><strong>Fráze</strong> - <a href="/fraze.html" title="anglické fráze">drilování anglických frází.</a></li>
-                        <li><strong>Nepravidelní slovesa</strong>  - <a href="/nepravidelna_slovesa.html" title="anglická nepravidelná slovesa">drilování anglických nepravidelných sloves</a>.</li>
-                    </ul>
+                        <p>
+                            <a href="/login" class="button toRight" style="font-size: 150%;">Přihlásit nebo registrovat</a>
+                            <strong>Drilujeme využívá Google account</strong>. Díky tomu můžete používat Knihovnu frází, slovíček a nepravidelných sloves nezávisle na ostatních uživatelích.
+                        </p>
+                        <div class="clearfix"></div>
+                    </div>
 
-               
+               <div class="clearfix"></div>
 
+                     <div style="width:49%; float:left; background:#eee;" class="corner">
+                         <div style="padding:1em">
+                            <img src="/images/monkey1.jpg" class="toLeft img" width="150" height="150"  alt="www.drilujeme.cz" title="anglická slovíčka, anglické fráze, nepravidelná slovesa" />
+                            <h4>Drilujeme</h4>
+                            <p><strong>Pravidelným opakováním</strong> udržíte v paměti <strong>slovíčka</strong>, <strong>fráze</strong> i <strong>nepravidelná slovesa</strong>.</p>
+                            <div class="clearfix"></div>
+                        </div>
+                     </div>
 
+                    <div style="width:50%; float:right; background:#eee;" class="corner">
+                             <div style="padding:1em">
+                                <img src="/images/monkey2.jpg" class="toLeft img" width="150" height="150"  alt="www.drijume.cz" title="anglická slovíčka, anglické fráze, nepravidelná slovesa" />
+                                <h4>Je zdarma</h4>
+                                <p>Drilujeme <strong>je zdarma</strong> a nabízí několik nástrojů pro <strong>automatické drilování</strong>.</p>
+                                <div class="clearfix"></div>
+                            </div>
+                    </div>
 
+                   <div class="clearfix"></div>
+                              
              </div> <!-- id="space" -->
                <hr />
               </div> <!-- id="main" -->
@@ -73,8 +103,12 @@
 
       </div> <!-- id="page" -->
 
-
     <% include '/WEB-INF/includes/gaq.gtpl' %>
+
+    <%       
+        //defaultQueue.add countdownMillis: 5000, url: "/index.gtpl", method: 'PUT'
+        //log.warning "GO-TASK"
+    %>
     </body>
 </html>
 

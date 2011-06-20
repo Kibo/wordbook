@@ -8,7 +8,7 @@ $(document).ready(function() {
         // sort on the third column, order asc
         sortList: [[0,0]],
         widgets: ['zebra']       
-        });
+        });    
   });
 
   function speech(speech){   

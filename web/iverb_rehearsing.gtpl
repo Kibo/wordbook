@@ -24,19 +24,14 @@
                 <div class="space">
 
                     <form action="/nepravidelna_slovesa/preference/save" method="post">
-                    
-                    <div class="monkey">
-                         <fieldset>
-                            <p>
-                               <label>${request.iverb.infinitiveCs}</label>
-                            </p>
-                         </fieldset>
-                         <div class="cleaner"></div>
-                    </div>
 
-                    <div class="student">
-                        <fieldset>
-                            <p>
+                       <img src="/images/drilujeme1.jpg" class="toLeft shadow" alt="Teacher" width="60" />
+                      <div class="chat-bubble-left"><strong>${request.iverb.infinitiveCs}</strong></div>
+                      <div class="cleaner"></div>
+
+                      <img src="/images/drilujeme2.jpg" class="toRight shadow" alt="Student" width="60" />
+                      <div class="chat-bubble-right">
+                           <p>
                                <label for="infinitiveEnStudent" class="label" >Infinitiv</label>
                                <input type="text" id="infinitiveEnStudent" name="infinitiveEnStudent" value="${request.iverb.infinitiveEnStudent}" class="getFocus corner" autocomplete="off"  />
                                <input type="hidden" id="infinitiveEn" name="infinitiveEn" value="${request.iverb.infinitiveEn}" />
@@ -53,28 +48,22 @@
                                <input type="text" id="pastParticipleStudent" name="pastParticipleStudent" value="${request.iverb.pastParticipleStudent}" class="corner" autocomplete="off" />
                                 <input type="hidden" id="pastParticiple" name="pastParticiple" value="${request.iverb.pastParticiple}" />
                             </p>
-                        </fieldset>
-                        <div class="cleaner"></div>
-                    </div>
+                      </div>
+                     <div class="cleaner"></div>
 
-                    <div class="monkey hidden">
-                         <fieldset>
-                            <p>
-                               <label>
-                                   ${request.iverb.infinitiveEn}, ${request.iverb.pastSimple}, ${request.iverb.pastParticiple}
-                               </label>
-                            </p>
-                         </fieldset>
-                         <div class="cleaner"></div>
-                    </div>
+                     <div class="monkey hidden">
+                          <img src="/images/drilujeme1.jpg" class="toLeft shadow" alt="Teacher" width="60" />
+                          <div class="chat-bubble-left">
+                              <strong>${request.iverb.infinitiveEn}, ${request.iverb.pastSimple}, ${request.iverb.pastParticiple}</strong>
+                          </div>
+                      </div>
+                      <div class="cleaner"></div>
 
-
-                   <div class="line"></div>
+                     <div class="line"></div>
                         <div id="rehearsingMenuBar" class="clearfix">
-
-                            <input type="button" class="button" value="Kontrola" onclick="showResultIVerbs(); speech('${request.iverb.textToSpeech()}');" />
-
-
+                            
+                            <button type="button" class="button sound" onclick="showResultIVerbs(); speech('${request.iverb.textToSpeech()}');">Kontrola <span</span></button>
+             
                             <input type="hidden" name="iverb" value="${request.iverb.id}" />
                             <input type="hidden" name="preference" value="${request.preference.id}" />
                             <input type="submit" class="button" value="Daší" />

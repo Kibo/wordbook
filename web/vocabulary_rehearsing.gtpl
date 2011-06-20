@@ -27,45 +27,39 @@
                     
                   <form action="/slovicka/preference/save" method="post">
 
-                    <div class="monkey">
-                        <fieldset>
-                          <p>
-                              <label class="label" >${request.vocabulary.source}</label>
-                          </p>
-                        </fieldset>
-                        <div class="cleaner"></div>
-                    </div>
+                      <img src="/images/drilujeme1.jpg" class="toLeft shadow" alt="Teacher" width="60" />
+                      <div class="chat-bubble-left"><strong>${request.vocabulary.source}</strong></div>
+                      <div class="cleaner"></div>
 
-                    <div class="student">
-                        <fieldset class="corner">
+                      <img src="/images/drilujeme2.jpg" class="toRight shadow" alt="Student" width="60" />
+                      <div class="chat-bubble-right">
                            <% request.vocabulary.entries.eachWithIndex(){ en, idx -> %>
                              <p>
                                  <input id="entriesStudent${idx}" name="entriesStudent${idx}" class="<% if(idx==0){print 'getFocus ' }%>corner" type="text" maxlength="50" autocomplete="off" />
                              </p>
                            <%}%>
-                        </fieldset>
-                        <div class="cleaner"></div>
-                    </div>
-                   
-                   <div class="monkey hidden">
-                       <fieldset class="corner">
-                        <p>
-                            <label><% request.vocabulary.entries.eachWithIndex(){ en, idx -> if(idx!=0){ print ","};  print en} %></label>
-                        </p>
-                       </fieldset>
-                      <div class="cleaner"></div>
-                   </div>
+                      </div>
+                     <div class="cleaner"></div>
 
+                     <div class="monkey hidden">
+                          <img src="/images/drilujeme1.jpg" class="toLeft shadow" alt="Teacher" width="60" />
+                          <div class="chat-bubble-left">
+                              <strong><% request.vocabulary.entries.eachWithIndex(){ en, idx -> if(idx!=0){ print ", "};  print en} %></strong>
+                          </div>
+                      </div>
+                      <div class="cleaner"></div>
+                 
                     <div class="line"></div>
 
                     <div id="rehearsingMenuBar" class="clearfix">
                         
                         <input id="entries" name="entries" type="hidden" value='<% request.vocabulary.entries.eachWithIndex(){ en, idx -> if(idx!=0){ print ","};  print en} %>' />
-                        <input type="button" class="button" onclick="showResultVocabulary(); speech('${request.vocabulary.textToSpeech()}');" value="Kontrola" />
-
+                        <button type="button" class="button sound" onclick="showResultVocabulary(); speech('${request.vocabulary.textToSpeech()}');">Kontrola <span</span></button>
+                    
                         <input type="hidden" name="vocabulary" value="${request.vocabulary.id}" />
                         <input type="hidden" name="preference" value="${request.preference.id}" />
                         <input type="submit" class="button" value="Daší" />
+                        <input type="submit" class="button" value="Je správně!" name="isCorrect" />
 
                         <%if(request.vocabulary.owner.equals(user)){%>
                             <a href="/slovicka/edit/${request.vocabulary.id}">upravit</a> |

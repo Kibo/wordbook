@@ -44,7 +44,7 @@
                     <% if (request.message) {%>
                     <div class="errors">
                         <ul>
-                            <li>Nevyplnily jste všechna povinná pole: <em>České znění fráze</em>, <em>Anglická fráze </em>, <em>Tag</em></li>
+                            <li>Nevyplnily jste všechna povinná pole: <em>České znění fráze</em>, <em>Anglická fráze </em>, <em>Štítek</em></li>
                         </ul>
                     </div>
                     <% } %>
@@ -72,7 +72,7 @@
                         </fieldset>
 
                         <fieldset class="corner">
-                        <legend class="corner">Tagy</legend>
+                        <legend class="corner">Štítky</legend>
                             <p>
                                 <% cz.kibo.wordbook.constant.Constant.PHRASE_TAGS.each(){ k,v -> %>
                                     <label>

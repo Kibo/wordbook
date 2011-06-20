@@ -55,11 +55,11 @@
                         </fieldset>
                       
                         <fieldset class="corner">
-                        <legend class="corner">Tagy</legend>
+                        <legend class="corner">Štítky</legend>
                             <p>
                                 <% cz.kibo.wordbook.constant.Constant.IVERB_TAGS.each(){ k,v -> %>
                                     <label>
-                                        <input type="radio" name="tags" value="${k}" ${ (request.iverb.tags != null && request.iverb.tags.contains( k )) ? "checked=\"checked\"" :  '' }   />${v}
+                                        <input type="radio" name="tags" value="${k}" ${ (request.iverb.tags != null && request.iverb.tags.contains( k )) ? "checked=\"checked\"" :  '' } />${v}
                                     </label>
                                 <% } %>
                             </p>

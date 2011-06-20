@@ -6,7 +6,8 @@
         <title>Anglická nepravidelná slovesa - ${ (request.tag) ? cz.kibo.wordbook.constant.Constant.IVERB_TAGS.get(params.tag) : 'Moje knihovna' } | www.drilujeme.cz</title>
         <meta name="description" content="Drilujte s námi anglická nepravidelná slovesa."/>
         <meta name="keywords" content="anglická nepravidelná slovesa"/>
-        <link rel="stylesheet" type="text/css" href="/css/main.css"/>      
+        <link rel="stylesheet" type="text/css" href="/css/main.css" media="screen,handheld,projection,tv"/>
+        <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"/>
     </head>
     <body id="iVerbPage">
       <div id="page">
@@ -30,8 +31,8 @@
                                 <th>Infinitiv</th>
                                 <th>Minulý čas</th>
                                 <th>Příčestí minulé</th>
-                                <th>Hodnocení</th>
-                                <th>Akce</th>
+                                <th class="noPrint">Hodnocení</th>
+                                <th class="noPrint">Akce</th>
                             </tr>
                         </thead>
 
@@ -42,8 +43,8 @@
                                     <td>${iverb.infinitiveEn}</td>
                                     <td>${iverb.pastSimple}</td>
                                     <td>${iverb.pastParticiple}</td>
-                                    <td>${iverb.rating()}</td>
-                                    <td>
+                                    <td class="noPrint">${iverb.rating()}</td>
+                                    <td class="noPrint">
 
                                         <%if(request.tag){%>
                                             <a href="/nepravidelna_slovesa/knihovna/add/${iverb.id}"  >přidej do knihovny</a>
@@ -65,8 +66,13 @@
                     </table>
 
 
+               <div class="right">
+                    <input type="button" class="button noPrint"  value="Tisk" onclick="window.print();"/>
+               </div>
+
                 </div> <!-- id="space" -->
                <hr />
+              
               </div> <!-- id="main" -->
 
              <div id="local">

@@ -6,8 +6,9 @@
         <title>Anglická slovíčka - knihovna | www.drilujeme.cz</title>
         <meta name="description" content="Drilujte s námi anglická slovíčka."/>
         <meta name="keywords" content="anglická slovíčka"/>
-        <meta name="robots" content="all, follow"/>       
-        <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+        <meta name="robots" content="all, follow"/>              
+        <link rel="stylesheet" type="text/css" href="/css/main.css" media="screen,handheld,projection,tv"/>
+        <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"/>
     </head>
     <body id="vocabularyPage">
       <div id="page">
@@ -29,8 +30,8 @@
                             <tr>
                                 <th>Slovíčko</th>
                                 <th>Význam</th>
-                                <th>Jazyk</th>
-                                <th>Akce</th>
+                                <th class="noPrint">Jazyk</th>
+                                <th class="noPrint">Akce</th>
                             </tr>
                         </thead>
 
@@ -41,8 +42,8 @@
                                     <td>
                                         <% vocabulary.entries.each(){ en ->  println en } %>
                                     </td>
-                                    <td>${vocabulary.lang}</td>
-                                    <td>
+                                    <td class="noPrint">${vocabulary.lang}</td>
+                                    <td class="noPrint">
                                          <%if(vocabulary.owner.equals(user)){%>
                                             <a href="/slovicka/edit/${vocabulary.id}">upravit</a> |
                                          <%}%>
@@ -55,6 +56,10 @@
 
                     </table>
 
+
+                <div class="right">
+                    <input type="button" class="button noPrint"  value="Tisk" onclick="window.print();"/>
+               </div>
 
                 </div> <!-- id="space" -->
                <hr />
@@ -74,7 +79,7 @@
 
       </div> <!-- id="page" -->
 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
       <script type="text/javascript" src="/js/jquery.tablesorter.js"></script>
       <script type="text/javascript" src="/js/main.js"></script>
 

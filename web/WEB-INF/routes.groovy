@@ -8,6 +8,7 @@ get "/book/isbn/@isbn", forward: "/WEB-INF/groovy/book.groovy?isbn=@isbn", valid
 //--FRAZE--------------------------------------------------
 //TODO index, new - add cache
 get "/",  forward: "/index.gtpl", cache: 24.hours
+get "/login",  forward: "/WEB-INF/groovy/login.groovy"
 get "/fraze.html", forward: "/WEB-INF/groovy/phrase_index.groovy", cache: 24.hours
 get "/fraze/procvicovani", forward: "/WEB-INF/groovy/phrase_rehearsing.groovy"
 get "/fraze/knihovna", forward: "/WEB-INF/groovy/phrase_library.groovy"
